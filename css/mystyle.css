@@ -1,0 +1,161 @@
+/* CSS UNTUK FOTO */
+.team-member{ text-align: center; }
+
+.team-member .picture{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-member .picture:before,
+.team-member .picture:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 13px solid #e6e5e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* lingkaran warna digambar */
+.team-member .kuning .picture:after{
+    border-color: #eeff02 #e6e5e5 #e6e5e5 #eeff02;
+    z-index: 1;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease 0s;
+}
+
+.team-member .merah .picture:after{
+    border-color: #da1717 #e6e5e5 #e6e5e5 #da1717;
+    z-index: 1;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease 0s;
+}
+
+.team-member .hijau .picture:after{
+    border-color: #1bad0e #e6e5e5 #e6e5e5 #1bad0e;
+    z-index: 1;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease 0s;
+}
+/* akhir lingkaran warna digambar */
+
+.team-member:hover .picture:after{ transform: rotate(350deg); }
+
+.team-member img{
+    width: 100%;
+    height: auto;
+
+}
+
+.team-member .title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #eaeaea;
+    padding-bottom: 10px;
+    margin: 15px 0 10px 0;
+    position: relative;
+
+}
+
+/* font size 15 */
+.team-member .title15{
+    font-size: auto;
+    font-weight: bold;
+    color: #eaeaea;
+    padding-bottom: 10px;
+    margin: 15px 0 10px 0;
+    position: relative;
+
+}
+
+.team-member .title15:after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #eaeaea;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.team-member .title15 .post {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+/* akhir font size 15 */
+
+
+.team-member .title:after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #eaeaea;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.team-member .post{
+    display: block;
+    font-size: 16px;
+    font-style: bold;
+    color: #eaeaea;
+}
+
+.team-member .title .post {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.team-member .icon{
+    list-style: none;
+    padding: 0;
+    margin: 10px 2 2 2;
+}
+
+.team-member .icon li{ display: inline-block; }
+
+.team-member .icon li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    font-size: 14px;
+    color: #999;
+    margin-right: 5px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.team-member .icon li a:hover{
+    background: #37b0f1;
+    color: #fff;
+}
+
+/* warna icon */
+.team-member .kuning .icon li a:hover{
+    background: #eeff02;
+    color: #fff;
+}
+
+.team-member .merah .icon li a:hover{
+    background: #da1717;
+    color: #fff;
+}
+
+.team-member .hijau .icon li a:hover{
+    background: #1bad0e;
+    color: #fff;
+}
+/* akhir warna icon */
+
+@media only screen and (max-width: 990px){
+    .team-member{ margin-bottom: 30px; }
+}
+/* AKHIR CSS UNTUK FOTO */
